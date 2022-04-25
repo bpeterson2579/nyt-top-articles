@@ -1,5 +1,7 @@
 import '../CSS/App.css';
 import React, { Component } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import SectionContainer from './SectionContainer';
 
 class App extends Component {
   constructor() {
@@ -19,7 +21,12 @@ class App extends Component {
 
   render() {
     return (
-      <h1 className='title'>New York Times Top Stories</h1>
+      <main>
+        <h1 className='title'>New York Times Top Stories</h1>
+        <Routes>
+          <Route path='/' element={<SectionContainer articles={this.state.articles} />} />
+        </Routes>
+      </main>
     );
   }
 }
