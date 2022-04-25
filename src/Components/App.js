@@ -20,7 +20,7 @@ class App extends Component {
   render() {
     return (
       <h1 className='title'>New York Times Top Stories</h1>
-      );
+    );
   }
 }
 
