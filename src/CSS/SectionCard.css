@@ -1,0 +1,33 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 20vh;
+  width: 25vw;
+  border: 3px solid grey;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+}
+
+.card:hover {
+  background-color: #c6c1c1;
+  transform: scale(1.1);
+  transition: .2s;
+}
+
+.section-card-pic {
+  height: 50%;
+  width: fit-content;
+}
+
+.section-card-title {
+  text-decoration: none;
+  margin: 0;
+}
+
+.section-card-byline {
+  font-size: 15px;
+  margin-top: 10px;
+  text-decoration: none;
+}
