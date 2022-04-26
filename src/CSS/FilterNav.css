@@ -1,0 +1,10 @@
+.filter-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.topic-search {
+  width: 50%;
+  height: 20px;
+  border: 2px solid grey;
+}
