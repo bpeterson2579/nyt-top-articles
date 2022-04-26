@@ -10,6 +10,7 @@ const SectionContainer = ({articles}) => {
         byline={article.byline}
         picture={article.multimedia[0]}
         uri={article.uri}
+        url={article.url}
         key={article.uri}
       />
     )
@@ -17,7 +18,7 @@ const SectionContainer = ({articles}) => {
 
   return(
     <section className='articles'>
-      <h2>Articles</h2>
+      <h2 className='article-header'>Articles</h2>
       <div className='sections'>
         {sections}
       </div>

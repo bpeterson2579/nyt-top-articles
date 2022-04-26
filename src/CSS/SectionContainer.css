@@ -6,4 +6,10 @@
 .sections {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.article-header {
+  display: flex;
+  justify-content: center;
 }

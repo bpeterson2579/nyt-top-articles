@@ -1,0 +1,47 @@
+.article-details {
+  width: 60%;
+  padding: 16px;
+}
+
+.caption {
+  margin: 0;
+  font-size: smaller;
+}
+
+.author-creds {
+  width: fit-content;
+  border: 2px solid grey;
+  padding: 5px 10px;
+  margin: 16px 0px;
+}
+
+.author,
+.published-date {
+  margin: 0;
+}
+
+.abstract {
+  font-size: 20px;
+}
+
+.links-div {
+  display: flex;
+  justify-content: space-around;
+  width: 20vw;
+}
+
+.link {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 7px;
+  text-decoration: none;
+  background-color: #c6c1c1;
+  color: black;
+}
+
+.link:hover {
+  transform: scale(1.2);
+  transition: .2s;
+  background-color: black;
+  color: #c6c1c1;
+}

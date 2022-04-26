@@ -26,7 +26,7 @@ class App extends Component {
       <main>
         <h1 className='title'>New York Times Top Stories</h1>
         <Routes>
-          <Route path='/' element={<SectionContainer articles={this.state.articles} /> } />
+          <Route exact path='/' element={<SectionContainer articles={this.state.articles} /> } />
           <Route path='/:uri' element={<ArticleDetails articles={this.state.articles}/> } />
         </Routes>
       </main>:
