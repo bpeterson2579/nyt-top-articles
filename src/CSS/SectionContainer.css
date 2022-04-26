@@ -1,0 +1,9 @@
+.articles {
+  display: flex;
+  flex-direction: column;
+}
+
+.sections {
+  display: flex;
+  flex-wrap: wrap;
+}

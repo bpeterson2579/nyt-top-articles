@@ -3,22 +3,24 @@ import React from 'react';
 import SectionCard from './SectionCard';
 
 const SectionContainer = ({articles}) => {
-  const sections = articles.map((article, index) => {
+  const sections = articles.map((article) => {
     return(
       <SectionCard 
         title={article.title}
         byline={article.byline}
         picture={article.multimedia[0]}
-        url={article.url}
-        key={index}
+        uri={article.uri}
+        key={article.uri}
       />
     )
   })
 
   return(
-    <section>
+    <section className='articles'>
       <h2>Articles</h2>
-      {sections}
+      <div className='sections'>
+        {sections}
+      </div>
     </section>
   )
 }

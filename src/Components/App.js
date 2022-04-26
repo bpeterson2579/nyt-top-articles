@@ -2,6 +2,7 @@ import '../CSS/App.css';
 import React, { Component } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import SectionContainer from './SectionContainer';
+import ArticleDetails from './ArticleDetails';
 
 class App extends Component {
   constructor() {
@@ -21,12 +22,15 @@ class App extends Component {
 
   render() {
     return (
+      this.state.articles.length > 0 ? 
       <main>
         <h1 className='title'>New York Times Top Stories</h1>
         <Routes>
-          <Route path='/' element={<SectionContainer articles={this.state.articles} />} />
+          <Route path='/' element={<SectionContainer articles={this.state.articles} /> } />
+          <Route path='/:uri' element={<ArticleDetails articles={this.state.articles}/> } />
         </Routes>
-      </main>
+      </main>:
+      <h1 className='loading'>Loading...</h1>
     );
   }
 }
